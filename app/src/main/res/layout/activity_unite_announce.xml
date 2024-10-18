@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E4FFFFFF">
+
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ImagePrinc"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:scaleType="fitXY"
+                    app:shapeAppearanceOverlay="@style/product_unit_rounded"
+                    app:srcCompat="@drawable/graybg"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="-95dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <ImageButton
+                    android:id="@+id/back_arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/returnicone" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#E4FFFFFF">
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="322dp"
+                    android:ellipsize="end"
+                    android:text=""
+                    android:textColor="#DF000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/star"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/star"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/star"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/star"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/star"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/starGray1"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/stargray"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/starGray2"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/stargray"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/starGray3"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/stargray"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/starGray4"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/stargray"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/starGray5"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="65dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/stargray"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="33dp"
+                    android:text=""
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="130sp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="114dp"
+                    android:layout_marginEnd="220dp"
+                    android:text="Hotel The Valley"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="33dp"
+                    android:layout_marginEnd="15dp"
+                    android:text=""
+                    android:ellipsize="end"
+                    android:textColor="#FF9902"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="335dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="136dp"
+                    android:layout_marginEnd="30dp"
+                    android:text=""
+                    android:textColor="#A8000000"
+                    android:textSize="17sp"
+                    android:textStyle="italic"
+                    android:ellipsize="end"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/orangecity"
+                    android:layout_width="21dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="292dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/pin" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:ellipsize="end"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="295dp"
+                    android:text=""
+                    android:textColor="#DF000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="33dp"
+                    android:layout_height="20dp"
+
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="320dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/orangecity" />
+
+                <ImageButton
+                    android:id="@+id/map"
+                    android:layout_width="43dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginTop="340dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/see_on_maps"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="355dp"
+                    android:text="See on Google Maps"
+                    android:textColor="#2A518E"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/HotelCategory"
+                    android:layout_width="30dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="34dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/hotelblack"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/SportCategory"
+                    android:layout_width="30dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="34dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/sportblack"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/HouseCategory"
+                    android:layout_width="30dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="34dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/houseblack"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/RestoCategory"
+                    android:layout_width="30dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="34dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/restoblack"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/call_now"
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="432dp"
+                    android:background="@drawable/bg_call_now"
+                    android:gravity="center"
+                    android:text="Call Now"
+                    android:textAllCaps="true"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/contact_info"
+                    android:layout_width="165dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="432dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_contact_info"
+                    android:gravity="center"
+                    android:text="contact Info"
+                    android:textAllCaps="true"
+                    android:textColor="#ffff"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E4FFFFFF"
+                >
+
+
+                <ImageButton
+                    android:id="@+id/Image1"
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_hotelroom"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageButton
+                    android:id="@+id/Image2"
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_hotelroom"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.508"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Image1" />
+
+                <ImageButton
+                    android:id="@+id/Image3"
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_hotelroom"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Image2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/popup"
+        android:background="#AD000000"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_popup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="71dp"
+                android:layout_height="27dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="60dp"
+
+                android:text="Name :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+
+            <TextView
+                android:id="@+id/EAddress"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="110dp"
+
+                android:text="Email :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/Phone_Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="160dp"
+                android:text="Phone number:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/nameOfferMakerShow"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="59dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/EmailShow"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="95dp"
+                android:layout_marginTop="110dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="italic"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/numberShow"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="160dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

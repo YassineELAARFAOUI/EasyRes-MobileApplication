@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="roundimagrview" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/white</item>
+
+    </style>
+
+    <style name="circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="rounderImagePrincipaleAddPost">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="rounderSmollImageAddPost">
+        <item name="cornerSize">4dp</item>
+    </style>
+    <style name="product_unit_rounded">
+        <item name="cornerSizeBottomLeft">10%</item>
+        <item name="cornerSizeBottomRight">10%</item>
+
+    </style>
+
+
+</resources>

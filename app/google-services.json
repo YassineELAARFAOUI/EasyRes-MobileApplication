@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "114611415165",
+    "firebase_url": "https://dataeasyres-default-rtdb.firebaseio.com",
+    "project_id": "dataeasyres",
+    "storage_bucket": "dataeasyres.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114611415165:android:45630120b5f1b8d0c8e914",
+        "android_client_info": {
+          "package_name": "com.first.easyrespro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114611415165-9f0qi5usb0fqs54mbpjhk7etu1s6rjn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKmDxUD_5KaoLS3CdvckFGJ3ncl4SQBPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114611415165-9f0qi5usb0fqs54mbpjhk7etu1s6rjn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

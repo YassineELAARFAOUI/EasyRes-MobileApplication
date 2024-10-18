@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EasyResPro</string>
+    <string name="menu_open">open</string>
+    <string name="close_menu">close</string>
+
+    <string-array name="Catigorie">
+        <item>Category ...</item>
+        <item>Resturant</item>
+        <item>Hotel</item>
+        <item>House</item>
+        <item>Sport</item>
+    </string-array>
+</resources>

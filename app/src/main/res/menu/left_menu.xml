@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home"
+            />
+
+        <item
+            android:id="@+id/profil"
+            android:title="Profil"
+            android:icon="@drawable/nameicon"
+            />
+        <item
+            android:id="@+id/addpost"
+            android:title="Add post"
+            android:icon="@drawable/addpost"
+            />
+        <item
+            android:id="@+id/filter"
+            android:title="Filter"
+            android:icon="@drawable/filter"
+            />
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="contact">
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/reclamtion"
+                        android:title="Reclamtion"
+                        android:icon="@drawable/reclamation"
+                        />
+                    <item
+                        android:id="@+id/contactus"
+                        android:title="Contact us"
+                        android:icon="@drawable/contactus"
+                        />
+                </group>
+
+
+            </menu>
+
+
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Infos">
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/aboutus"
+                        android:title="About us"
+                        android:icon="@drawable/aboutus"
+                        />
+                    <item
+                        android:id="@+id/youtube"
+                        android:title="Youtube"
+                        android:icon="@drawable/youtube"
+                        />
+
+
+
+                </group>
+
+
+            </menu>
+
+
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="">
+            <menu>
+                <group>
+
+                    <item
+                        android:id="@+id/logout"
+                        android:title="Logout"
+                        android:icon="@drawable/logout"
+                        />
+                    <item
+                        android:id="@+id/exit"
+                        android:title="Exit"
+                        android:icon="@drawable/exit"
+                        />
+
+                </group>
+
+
+            </menu>
+
+
+        </item>
+
+    </group>
+
+</menu>

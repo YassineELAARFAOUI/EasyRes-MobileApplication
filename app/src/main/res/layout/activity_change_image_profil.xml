@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#EDEDED">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="728dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="728dp"
+                android:orientation="vertical">
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="-2dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/imageuser"
+                                android:layout_width="264dp"
+                                android:layout_height="266dp"
+                                android:scaleType="fitXY"
+
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.436"
+                                app:shapeAppearanceOverlay="@style/circular"
+                                app:srcCompat="@drawable/graybg" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="150dp"
+                                android:layout_height="32dp"
+                                android:text="Profile Photo"
+                                android:textColor="#9C9C9C"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.283"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.037" />
+
+                            <Button
+                                android:id="@+id/saveIt"
+                                android:layout_width="300dp"
+                                android:layout_height="57dp"
+                                android:background="@drawable/button_rounded"
+                                android:text="Save"
+                                android:textColor="#ffff"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.91" />
+
+                            <Button
+                                android:id="@+id/takeMyImage"
+                                android:layout_width="300dp"
+                                android:layout_height="57dp"
+                                android:background="@drawable/button_rounded"
+                                android:text="Change Photo"
+                                android:textColor="#ffff"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.812" />
+
+                            <ImageButton
+                                android:id="@+id/returnbtn"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="#00FFFFFF"
+                                android:scaleType="fitXY"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.041"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.037"
+                                app:srcCompat="@drawable/returnicone" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
